@@ -1,0 +1,129 @@
+        /* Estilo personalizado para el encabezado */
+        .navbar-custom {
+            background-color: #111;
+        }
+
+        .navbar-custom .navbar-brand {
+            color: #E50914;
+        }
+
+        .navbar-custom .navbar-nav .nav-link {
+            color: #FFF;
+        }
+
+        .navbar-custom .nav-item.active .nav-link {
+            color: #E50914;
+        }
+
+        /* Estilo personalizado para las tarjetas de películas */
+        .card {
+            border: none;
+            background-color: #111;
+        }
+
+        .card-img-top {
+            border-radius: 0;
+        }
+
+        .card-title {
+            color: #FFF;
+        }
+
+        .card-text {
+            color: #BBB;
+        }
+#fontstitle{
+    font-family: 'CF Mexicana PERSONAL USE';
+    /*font-family: 'Bloodsoul';*/
+    color: #ff0000;
+    font-size: 30px;
+}
+#fontappbar {
+    font-family: 'Demode';
+    color: #c2c2c2;
+    font-size: 25px;
+    transition: color 0.3s; /* Agregar una transición suave para el cambio de color */
+}
+
+#fontappbar:hover {
+    color: #FFF;
+}
+
+#fontappbarbuttom:hover {
+    color: #FFF;
+}
+#backgroundCard{
+    background-color: black;
+}
+
+.navbar-custom {
+    background-color: #111;
+}
+
+/* Establece la imagen de fondo debajo del menú */
+.background-image {
+    background-image: url('D:/ESCUELA 2023/Festival dia de los muertos  Web/assets/img/decoracionmex.png');
+    background-repeat: repeat-x;
+    background-position: bottom;
+    padding-bottom: 90px; /* Espacio entre la imagen y el contenido debajo del menú */
+}
+.background-imagetwo{
+    background-image: url('D:/ESCUELA 2023/Festival dia de los muertos  Web/assets/img/decoracionmexinv.png');
+    background-repeat: repeat-x;
+    background-position: bottom;
+    padding-bottom: 300px; /* Espacio entre la imagen y el contenido debajo del menú */ 
+}
+.h1title{
+    text-align: center;
+    font-family: 'CF Mexicana PERSONAL USE';
+    /*font-family: 'Bloodsoul';*/
+    font-size: 100px;
+}
+.h1title2{
+    text-align: center;
+    /*font-family: 'Bloodsoul';*/
+    font-family: 'Gnarly Skeleton PERSONAL USE';
+   /* font-family: 'Demode';*/
+   color: black;
+    font-size: 80px;
+}
+.masinformacion{
+    font-family: 'skullphabet';
+    text-align: center;
+    font-size: 30px;
+}
+.center{
+    text-align: center;
+}
+#backgroundcolors{
+    background-color: rgba(245, 245, 245, 0.452);
+}
+#ps{
+    font-family: 'Dead Font Walking';
+    /*font-weight: bold;*/
+    color: #000;
+    
+}
+
+
+.peliculas-lista li {
+    flex: 0 0 calc(33.333% - 20px);
+    max-width: calc(33.333% - 20px);
+    background-color: #141414;
+    border-radius: 8px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    position: relative;
+}
+
+.peliculas-lista h4 {
+    color: white;
+    padding: 16px;
+    cursor: pointer;
+}
+
+.peliculas-lista p {
+    display: none;
+    color: #c9c9c9;
+    padding: 0 16px 16px;
+}
