@@ -38,6 +38,7 @@
     color: #ff0000;
     font-size: 30px;
 }
+
 #fontappbar {
     font-family: 'Demode';
     color: #c2c2c2;
@@ -79,6 +80,13 @@
     /*font-family: 'Bloodsoul';*/
     font-size: 100px;
 }
+.h1titles{
+    text-align: center;
+    font-family: 'CF Mexicana PERSONAL USE';
+    /*font-family: 'Bloodsoul';*/
+    color: #fff;
+    font-size: 100px;
+}
 .h1title2{
     text-align: center;
     /*font-family: 'Bloodsoul';*/
@@ -104,26 +112,42 @@
     color: #000;
     
 }
+.containers {
+    padding-left: 90px;
+    padding-right: 30px;
+    width: calc(100% - 60px); /* 60px (30px en cada lado) se restan al 100% */
+    margin: 0 auto; /* Centra el contenedor horizontalmente */
+    max-width: 100%; /* Para asegurarse de que no se desborde en pantallas pequeñas */
+    text-align: center;
+}
 
+.peliculas-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+}
 
-.peliculas-lista li {
-    flex: 0 0 calc(33.333% - 20px);
-    max-width: calc(33.333% - 20px);
-    background-color: #141414;
-    border-radius: 8px;
-    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
-    overflow: hidden;
+.pelicula-container {
     position: relative;
-}
-
-.peliculas-lista h4 {
-    color: white;
-    padding: 16px;
     cursor: pointer;
+    overflow: hidden;
+    transition: transform 0.3s ease;
+    height: 400px;
+    width: 500px;
 }
 
-.peliculas-lista p {
-    display: none;
-    color: #c9c9c9;
-    padding: 0 16px 16px;
+.pelicula-info {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.7);
+    padding: 10px;
+    color: #fff;
+    transform: translateY(100%);
+    transition: transform 0.3s ease;
+}
+
+.pelicula:hover .pelicula-info {
+    transform: translateY(0);
 }
